@@ -1,0 +1,72 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background: black;
+    
+}
+
+
+
+.chica{
+    width: 1150px;
+    height: 750px;
+    position: relative;
+    
+}
+
+.texto_de_interfaz{
+    color: rgba(255, 255, 255, 0.348);
+    width: 700px;
+    font-size: 80px;
+    position: relative;
+    bottom: 200px;
+    padding: 1%;
+    z-index: 1;
+}
+
+#cuadrado_morado{
+    background: #0D0A11;
+    position: relative;
+    width: 100px;
+    height: 463px;
+    justify-content: flex-end;
+    align-content: space-evenly;
+    padding: 10%;
+    margin: 20px;
+    bottom: 1000px;
+    left: 1100px;
+    z-index: 1;
+}
+
+ul{
+    color: white;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 110px;
+}
+
+#perfil{
+    position: absolute;
+    top: 100px;
+    left: 28px;
+    width: 30%;
+}
+
+.botones{
+    padding: 20px;
+    background: #2C2338;
+    width: 200px;
+    position: relative;
+    display: flex;
+    right: 60px;
+    border-radius: 10%;
+}
+
+.botones :hover{
+    background: #634c81;
+}
+
+a{
+    color: aliceblue;
+}
