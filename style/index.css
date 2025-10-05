@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+
+.interfaz {
+    position: relative;
+    flex: 2;
+    width: 50%;
+    height: 100vh;
+    background-image: url("../img/image.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.texto_de_interfaz{
+    position: absolute;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.573);
+    width: 100vh;
+    font-size: 5em;
+    padding: 6vh;
+}
+
+.panel{
+    flex: 1;
+    display: flex;
+    background: #0D0A11;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#perfil{
+    display: flex;
+    width: 25vh;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex; 
+    flex-direction: column; /* los elementos van uno debajo del otro */
+    align-items: center; /* centrados horizontalmente */
+    gap: 20px; /* espacio entre los elementos */
+}
+
+.perfil-datos {
+    display: flex;
+    flex-direction: row; /* imagen y lista lado a lado */
+    align-items: center;
+    gap: 30px;
+}
+
+ul {
+    list-style: none; /* quita los puntos */
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5vh;
+}
+
+.botones a {
+    background: #2C2338;
+    color: white;
+    padding: 30px 90px;
+    border-radius: 10px;
+    text-decoration: none; /* quita el subrayado */
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.botones a:hover {
+    background: #634c81;
+}
+
+
