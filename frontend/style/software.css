@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body{
+    font-family: 'VT323', monospace;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("../img/fondoSoftware.png");
+    background-size: cover; /*esto el dice que abarque todo el espacio*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*es parecido al position que no dejaba mover cosas*/
+
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+img{
+    width: 25vh;
+}
+
+.panel{
+    display: flex;
+    width: 75%;
+    height: 80vh;
+    margin: auto; /*esto lo movio al centro*/
+    padding: 20px;
+    background: transparent;
+    border: 3px solid #8d65c2b1; /*el 3px es el grosor, solid estilo de la linea*/
+
+    box-shadow: 
+    0 0 10px  #7537c6b1,
+    0 0 20px  #7537c6b1,
+    inset 0 0 10px #7537c6b1;
+}
+
+
+.titulo{
+    display: flex;
+    width: 20%;
+    height: 2vh;
+    padding: 100px;
+    background: transparent;
+    border: 3px solid #7537c6b1;
+
+    box-shadow: 
+    0 0 10px  #7537c6b1,
+    0 0 20px  #7537c6b1,
+    inset 0 0 10px #7537c6b1;
+}
+
