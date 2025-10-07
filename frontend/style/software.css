@@ -31,10 +31,14 @@ img{
 
 .panel{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
     width: 75%;
     height: 80vh;
     margin: auto; /*esto lo movio al centro*/
-    padding: 20px;
+    padding: 30px;
     background: transparent;
     border: 3px solid #8d65c2b1; /*el 3px es el grosor, solid estilo de la linea*/
 
@@ -47,9 +51,11 @@ img{
 
 .titulo{
     display: flex;
+    flex: 1 1 100px;
+    justify-content: flex-start;
     width: 20%;
-    height: 2vh;
-    padding: 100px;
+    height: 3vh;
+    padding: 40px;
     background: transparent;
     border: 3px solid #7537c6b1;
 
@@ -58,4 +64,43 @@ img{
     0 0 20px  #7537c6b1,
     inset 0 0 10px #7537c6b1;
 }
+
+.menu{
+    display: flex;
+    flex: 1 1 100px;
+}
+
+#texto-informacion{
+    width: 30vh;
+}
+
+.mitad-arriba{
+    display: flex;
+}
+.mitad-abajo{
+    display: flex;
+    
+}
+
+.menu2{
+    display: flex;
+    flex-direction: column;
+    
+    width: 9%;
+    height: 13vh;
+    padding: 120px;
+    background: transparent;
+    border: 3px solid #7537c6b1;
+
+    box-shadow: 
+    0 0 10px  #7537c6b1,
+    0 0 20px  #7537c6b1,
+    inset 0 0 10px #7537c6b1;
+}
+
+#planeta{
+    display: flex;
+    width: 40vh;
+}
+
 
