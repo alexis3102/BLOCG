@@ -73,6 +73,7 @@ ul {
 }
 
 .botones a {
+    display: flex;
     background: #2C2338;
     color: white;
     padding: 30px 90px;

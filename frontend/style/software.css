@@ -9,4 +9,201 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 15vh;
+}
+
+img{
+    display: flex;
+    width: 150px;
+}
+
+#bordesDeAfuera{
+    display: flex;
+    flex-direction: column;
+}
+
+.bordes{
+    background: transparent;
+    border: 0.5vh solid #7537c6a4;
+    display: flex;
+}
+
+.Fila-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Fila-inferior{
+    display: flex;
+}
+
+#menu-Principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    flex: 1;
+}
+
+
+.informativo {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.botones{
+    margin: 4px;
+    color: #b8a2d8;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px 40px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s;
+
+    background: transparent;
+    border: 0.5vh solid #7437C6;
+    display: flex;
+}
+
+.botones:hover{
+    background: #634c8188;
+}
+
+#planeta{
+    width: 25vh;
+}
+
+#titulo{
+    padding: 1vh;
+}
+
+h1{
+    font-size: 5vh;
+    color: #b8a2d8;
+}
+
+p{
+    font-size: 3vh;
+    color: #b8a2d8;
+}
+
+#perfil{
+    padding: 3vh;
+}
+
+#cuadro-language {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* texto a la izquierda, imagen cerca */
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px; /* controla la distancia entre texto e imagen */
+}
+
+.texto-lenguaje {
+    flex: 1;
+}
+
+.info-frameworks{
+    flex: 2;
+    width: 44vh;
+}
+
+#frameworks{
+    display: flex;
+    width: 25vh;
+    margin-top: 2vh;
+}
+
+/* contenedor del texto */
+#cuadro-language .enlaces,
+#cuadro-language h3,
+#info-lenguaje {
+    color: #bfa0ff;
+    margin-left: 20px;
+}
+
+#info-lenguaje {
+    padding: 1vh;
+}
+
+#python {
+    display: flex;
+    width: 24vh;
+    height: auto;
+    margin-left: -23vh; /* movio la imagen para la izquierda */
+    margin-top: 5vh;  /*movio para abajo*/
+    align-self: flex-start;
+}
+
+.enlaces{
+    font-size: 3vh;
+    color: #b8a2d8;
+
+}
+
+.subtitulo{
+    font-size: 4vh;
+    padding: 1vh;
+    color: #b8a2d8;
+}
+
+ul{
+    list-style: none;
+}
+
+.gitbub {
+    display: flex;
+    flex-direction: row;       /* Coloca los elementos en fila */
+    align-items: center;       /* Centra verticalmente los dos bloques */
+    justify-content: space-between; /* Espacia la lista y el logo */
+    padding: 20px;
+    gap: 40px;                 /* Espacio entre lista e imagen */
+}
+
+.project-lista {
+    color: #a27bff;            /* color similar al de la referencia */
+}
+
+#titulo-project {
+    font-size: 4vh;
+    padding-bottom: 10px;
+}
+
+.enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.enlaces li {
+    padding: 5px 0;
+}
+
+/* Imagen y enlace de GitHub */
+.links-git {
+    display: flex;
+    flex-direction: column;    /* Imagen arriba, texto debajo */
+    align-items: center;       /* Centra ambos en el eje horizontal */
+}
+
+#github-img {
+    width: 25vh;              /* Ajusta tamaño según necesites */
+    height: auto;
+    filter: brightness(0.8);   /* opcional: efecto tenue */
+}
+
+.links-gitbuh {
+    background: #3b217aa3 ;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
 }
