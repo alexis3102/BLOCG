@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inglés</title>
+    <link rel="stylesheet" href="style/ingles.css">
+</head>
+<body>
+    <main class="pagina">
+        <!-- Menú lateral -->
+        <section class="menu">
+            <div class="menu-1">
+                <a href="index.html"><img src="img/home.png" alt="home" id="home"></a>
+                <img src="img/libro.png" alt="contenido" id="contenido">
+                <img src="img/mapa-m.png" alt="guardar" id="guardar">
+                <img src="img/compartir.png" alt="compartir" id="compartir">
+            </div>
+        </section>
+
+        <!-- Menú de temas -->
+        <section class="menu-contenido">
+            <div class="menu-2">
+                <h3 id="titulo">INGLES</h3>
+                <ul class="links-contenido">
+                    <li><a href="contenido-ingles/pasado-simple.html" class="link-dinamico">Past Simple</a></li>
+                    <li><a href="contenido-ingles/presente-simple.html" class="link-dinamico">Present Simple</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Panel de contenido dinámico -->
+        <section id="contenido-principal">
+            <h2>Bienvenido</h2>
+            <p>Selecciona un tema del menú para comenzar.</p>
+        </section>
+    </main>
+
+    <!-- Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll(".link-dinamico");
+            const contenedor = document.getElementById("contenido-principal");
+
+            links.forEach(link => {
+                link.addEventListener("click", async (e) => {
+                    e.preventDefault(); // Evita recargar la página
+
+                    const url = link.getAttribute("href");
+
+                    try {
+                        const response = await fetch(url);
+                        const html = await response.text();
+                        contenedor.innerHTML = html;
+                    } catch (error) {
+                        contenedor.innerHTML = "<p>Error al cargar el contenido.</p>";
+                        console.error("Error cargando contenido:", error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
