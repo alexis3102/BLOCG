@@ -4,12 +4,16 @@ body{
     font-family: 'VT323', monospace;
     display: flex;
     margin: 0;
-    background-image: url("../img/fondoSoftware.png");
+    height: 100vh;                 /* ocupa toda la altura */
+    justify-content: center;       /* centra horizontalmente */
+    align-items: center;           /* centra verticalmente */
+    background-image: url("../img/fondo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 15vh;
+    
 }
 
 img{
@@ -20,6 +24,7 @@ img{
 #bordesDeAfuera{
     display: flex;
     flex-direction: column;
+    
 }
 
 .bordes{
